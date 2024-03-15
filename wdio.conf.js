@@ -7,7 +7,7 @@ exports.config = {
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
     path :'/wd/hub',
-    port : 4723,
+    port : 47230,
     //
     // ==================
     // Specify Test Files
@@ -60,6 +60,7 @@ exports.config = {
         "appium:deviceName"     : 'Android Emulator',
         "appium:platformVersion": '12.0',
         "appium:app"            : path.join(process.cwd(),'./test/apk/Diet_meal.apk'),
+        //"appium:app"            : "/Volumes/Data/Bootcamp QA Automation/Sanber-Tugas-Akhir/test/apk/Diet_meal.apk",
         "appium:appPackage"     : "io.appium.android.apis",
         "appium:appActivity"    : ".ApiDemos",
         "appium:noReset"        : true,
@@ -119,7 +120,7 @@ exports.config = {
             {
                 args : {
                     address : '127.0.0.1',
-                    port    : 4723,
+                    port    : 47230,
                 },
                 logPath : './log',
                 command : 'appium'
